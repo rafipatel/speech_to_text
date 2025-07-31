@@ -2,3 +2,4 @@ uvicorn
 whisperx
 fastapi
 python-multipart
+dotenv

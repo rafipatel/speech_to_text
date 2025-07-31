@@ -3,6 +3,7 @@ from fastapi.responses import JSONResponse
 import whisperx
 import tempfile
 import os
+from dotenv import load_dotenv
 
 app = FastAPI()
 
@@ -10,6 +11,9 @@ device = "cpu"
 batch_size = 16
 compute_type = "int8"
 
+load_dotenv()
+hf_token = os.getenv("hf_token")
+print(hf_token)
 # Load model once during startup
 model = whisperx.load_model("large-v3", device, compute_type=compute_type)
 
@@ -38,7 +42,7 @@ async def transcribe(file: UploadFile = File(...)):
 
         # Step 3: Diarization
         diarize_model = whisperx.diarize.DiarizationPipeline(
-            use_auth_token="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",
+            use_auth_token=hf_token,
             device=device
         )
         diarize_segments = diarize_model(audio)
@@ -64,4 +68,4 @@ async def transcribe(file: UploadFile = File(...)):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000)
+    uvicorn.run("main:app", host="0.0.0.0", port=6000)

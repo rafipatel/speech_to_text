@@ -1,0 +1,25 @@
+
+kyani_cn_en,  
+(base) rafa@Rafis-Laptop fastapi % curl -X POST -F "file=@test_audios/speech_audio.wav;type=audio/wav" http://localhost:6000/transcribe
+[{"start":1.06,"end":9.18,"text":"生命是如此美丽自然界具有精致而复杂的结构让成千上万的生物保持着微妙的平衡","speaker":"SPEAKER_00"}]%  
+
+tornado_en_cn, 
+(base) rafa@Rafis-Laptop fastapi % curl -X POST -F "file=@test_audios/speech_audio_2.wav;type=audio/wav" http://0.0.0.0:6000/transcribe
+[{"start":0.031,"end":4.297,"text":" These are the top five most dangerous tornadoes to ever strike the United States.","speaker":"SPEAKER_01"},
+{"start":4.377,"end":6.259,"text":"The last one happened once in a lifetime.","speaker":"SPEAKER_01"},
+{"start":6.299,"end":8.502,"text":"Comment which one you think is the most terrifying.","speaker":"SPEAKER_01"}
+,{"start":8.542,"end":12.788,"text":"But first, you will have incredible luck tomorrow if you like and subscribe to my channel.","speaker":"SPEAKER_01"},
+{"start":12.828,"end":14.671,"text":"First is Tornado Caught in Iowa.","speaker":"SPEAKER_01"},{"start":18.416,"end":21.52,"text":"That tornado looked like a nightmare following you into reality.","speaker":"SPEAKER_01"},
+{"start":21.54,"end":26.106,"text":"Next is Tornado Caught in Lake City.","speaker":"SPEAKER_01"},{"start":27.841,"end":51.081,"text":" violent moment I hope everyone is okay next is tornado caught in Kansas it looked like it wasn't moving until it came running towards you next is Hurricane Milton caught in Florida this tornado is so fast and scary at the same time next is tornado caught in Oklahoma","speaker":"SPEAKER_01"},
+{"start":53.93,"end":56.727,"text":" A tornado in the middle of the night means double fear.","speaker":"SPEAKER_01"},{"start":56.808,"end":57.882,"text":"Double everything.","speaker":"SPEAKER_01"}]%                                                                                          
+
+
+shortplay_cn_en,
+(base) rafa@Rafis-Laptop fastapi % curl -X POST -F "file=@test_audios/audio.wav;type=audio/wav" http://0.0.0.0:6000/transcribe
+[{"start":0.571,"end":29.818,"text":"据客号消息飞扬协团董事长张扬名下百亿家产将全部捐赠给慈善事业妈的赵华我可是你亲爹你怎么能这么对我你把所有的钱全部捐给慈善机构一分没给我留亏我救你二十年的爹","speaker":"SPEAKER_01"}
+,{"start":31.975,"end":46.407,"text":"张扬你不用那么伤心张狂不是你的亲生儿子他呀是我的种秦湘玉也是我的今天只要你死你的飞鸟集团以后也是我的了","speaker":"SPEAKER_00"},{"start":46.977,"end":64.75,"text":"王子昊你可是我这辈子最好的兄弟啊是兄弟啊我还得好好感谢你呢当初只借了你区区一万块钱现在还给我这么大一个上市公司你就安心的去吧你的老婆孩子","speaker":"SPEAKER_00"}
+,{"start":64.73,"end":91.142,"text":"我会照顾好的张阳现在看你快死了我就跟你说句实话吧当年我和子昊在一起就还了他的孩子不过他当时刚要接手家里的生意不能出差的所以我才急着找你当了接盘侠不然就凭你的条件你也想高攀我秦小玉当时为了取利我爸和我姐夫为了出财你死在了皇上","speaker":"SPEAKER_02"},
+{"start":91.342,"end":113.873,"text":"我姐把所有的钱都给了我我爸爸高校威胁致命病后上层了警察这小玉你还信任吗张阳这水还有三分钟就得把你淹死对了你知道我跟你媳妇做得最爽那次是什么时候吗就是你订婚那一天","speaker":"SPEAKER_00"},
+{"start":137.731,"end":164.802,"text":"这 这不是二十年前我的定婚宴吗我不是已经死了吗王子昊你疯了我还怀着你的孩子呢要是被张扬发现我们的计划不就泡汤了好久没这么刺激了来穿越了","speaker":"SPEAKER_02"},{"start":165.305,"end":169.223,"text":"这是二十年前","speaker":"SPEAKER_00"}]%     
+
+
