@@ -2,6 +2,8 @@
 
 This repository provides a FastAPI-based API for audio transcription, alignment, and speaker diarization using [WhisperX](https://github.com/m-bain/whisperx).
 
+👉 Try the live demo on [Hugging Face Spaces](https://huggingface.co/spaces/Rafii/SpeechSegmenter)
+
 ---
 
 ## 📁 Project Structure
